@@ -1,0 +1,6 @@
+ace@tim.kognit.io,Tim Nieradzik;
+jacek.lange@gmail.com,Jacek Lange;
+m.chomej@gmail.com,Michał;
+corey@smith-tailor.com,Corey Innis;
+lukasz.koperniak@gmail.com,Lukasz;
+dr@xtrf.eu,Dominik Radziszowski;
