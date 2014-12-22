@@ -722,6 +722,15 @@ Schedule
 /*--------------------
 Speakers
 --------------------*/
+.submit-talk {
+	margin-top: 2rem;
+}
+
+.submit-talk a.button {
+	text-decoration: none !important;
+	color: white !important;
+}
+
 .speaker {
 	position: relative;
 	max-width: 280px;
