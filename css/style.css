@@ -153,6 +153,11 @@ hr {
 
 
 /*-- Forms --*/
+
+li .form-line-active {
+	background-color: none;
+}
+
 .form, .jotform-form {
 	margin: 0 0 1.5rem 0;
 }
@@ -724,6 +729,10 @@ Speakers
 --------------------*/
 .submit-talk {
 	margin-top: 2rem;
+}
+
+h2.submit-header {
+	margin-bottom: 2rem;
 }
 
 .submit-talk a.button {
