@@ -184,6 +184,7 @@ form li {
 .form-radio-item, .form-checkbox-item{
     margin-top:5px;
     float:left;
+    line-height: 1.4rem;
 }
 .form-multiple-column, .form-single-column{
     display:inline-block;
@@ -193,7 +194,6 @@ form li {
 }
 .form-multiple-column .form-radio-item, .form-multiple-column .form-checkbox-item{
     width:150px;
-    height: 1.1rem !important;
 }
 
 .form-radio-item label, .form-checkbox-item label{
@@ -205,6 +205,7 @@ form li {
 
 input[type="checkbox"], input[type="radio"] {
     width: auto;
+    margin-top: -4px;
 }
 
 .form-submit-button, .form-submit-reset, .form-submit-print, .form-screen-button{
@@ -615,12 +616,15 @@ span.form-required {
 
 .form-address-table{
     width:330px;
+    font-size: 1.3rem;
 }
 
 .form-address-line{
     width:310px;
+    font-size: 1.3rem;
 }
-.form-address-city, .form-address-state{
+.form-address-city, .form-address-state, .form-address-postal{
+    font-size: 1.3rem;
     width:144px;
 }
 .form-address-table td, .form-address-table th{
@@ -628,7 +632,7 @@ span.form-required {
 }
 
 .form-address-table select{
-    width:150px;
+    width:144px;
 }
 
 .form-button-error{
