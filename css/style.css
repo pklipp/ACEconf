@@ -34,8 +34,7 @@ Color Scheme
 .preloader div, .preloader, .preloader:before, .preloader:after,
 .button, a.register, .speaker-contacts, .highlight .table-header,
 .owl-buttons, ul.social-icons li a:hover, .button-active:after,
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus, div.fancy-select ul.options li.selected {
+ div.fancy-select ul.options li.selected {
 	background-color: #6fbe4a; /* <- Paste here your prefered color */
 }
 
@@ -660,7 +659,7 @@ Schedule
 --------------------*/
 .schedule-time {
 	float: left;
-	min-width: 130px;
+	min-width: 100px;
 	padding: 2.5rem 2rem;
 	line-height: 3rem;
 	font-size: 3rem;
@@ -722,6 +721,19 @@ Schedule
 	margin-top: 1.5rem;
 }
 
+li.schedule-talk {
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	min-height: 119px;
+	margin: 0 auto;
+	vertical-align: top;
+	text-align: center;
+}
+
+li.active {
+
+}
 
 
 /*--------------------
@@ -1227,7 +1239,6 @@ Accordion
 }
 
 .accordion > li + li {
-	border-top: 0.5rem solid #fff;
 }
 
 .accordion-heading {
@@ -1237,6 +1248,24 @@ Accordion
 	cursor: pointer;
 	padding-right: 8rem;
 	overflow: hidden;
+}
+
+li.accordion-heading-time {
+	position: relative;
+	display: inline-block;
+	width: 10%;
+	cursor: pointer;
+	padding-right: 8rem;
+	overflow: hidden;
+}
+a.accordion-heading-talk {
+	position: relative;
+	top: 0;
+	display: inline-block;
+	cursor: pointer;
+	padding-right: 1rem;
+	overflow: hidden;
+	height: 100%;
 }
 
 .accordion-heading:after {
@@ -1279,7 +1308,21 @@ Accordion
 	background: rgba(255, 255, 255, 0.4);
 }
 
+.accordion-body-tracks {
+	width:300%;
+	margin-left: -100%;
+	margin-top: 20px;
+}
 
+.lean {
+	margin-left: 0;
+}
+.agile {
+	margin-left: -99%;
+}
+.workshop {
+	margin-left: -199%;
+}
 
 /*--------------------
 Testimonials
