@@ -25,7 +25,11 @@ Table of Contents
 
 --------------------*/
 
-
+*:before, *:after {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;
+}
 
 
 /*--------------------
@@ -659,8 +663,7 @@ Schedule
 --------------------*/
 .schedule-time {
 	float: left;
-	min-width: 100px;
-	padding: 2.5rem 2rem;
+	padding: 2rem 1.5rem;
 	line-height: 3rem;
 	font-size: 3rem;
 	font-weight: 700;
@@ -687,9 +690,8 @@ Schedule
 }
 
 .schedule-speaker-list {
-	margin-top: 3rem;
+	margin-top: 2rem;
 	padding-top: 3rem;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 }
 
@@ -721,20 +723,41 @@ Schedule
 	margin-top: 1.5rem;
 }
 
-li.schedule-talk {
+li.schedule-talk, li.schedule-talk.active .accordion-heading-talk {
 	position: relative;
 	display: inline-block;
-	width: 30%;
-	min-height: 119px;
 	margin: 0 auto;
 	vertical-align: top;
 	text-align: center;
+	box-sizing: border-box;
 }
 
-li.active {
+li.schedule-talk {
+	width: 31%;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a.accordion-heading-talk {
+	height: 119px;
+	width: 100%;
+	z-index: 10;
+}
+
+li.active .accordion-body-tracks {
+	overflow: hidden;
+	z-index: -1;
+	background-color: #f4f6f7;
+}
+
+ul.accordion li.active {
 
 }
 
+ul.accordion {
+	overflow: hidden;
+	border-right: 0.5rem solid #F4F6F7;
+}
 
 /*--------------------
 Speakers
@@ -1197,6 +1220,7 @@ Tabs
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #fff;
+	background-color: #6fbe4a;
   border: 0;
   cursor: default;
 }
@@ -1235,7 +1259,7 @@ Accordion
 }
 
 .accordion > li {
-	background: #ebeef0;
+  float: left;
 }
 
 .accordion > li + li {
@@ -1246,42 +1270,29 @@ Accordion
 	display: block;
 	width: 100%;
 	cursor: pointer;
-	padding-right: 8rem;
 	overflow: hidden;
 }
 
 li.accordion-heading-time {
 	position: relative;
 	display: inline-block;
-	width: 10%;
+  float: left;
+  width: 7%;
 	cursor: pointer;
-	padding-right: 8rem;
 	overflow: hidden;
 }
+
 a.accordion-heading-talk {
 	position: relative;
 	top: 0;
+  background: #ebeef0;
 	display: inline-block;
 	cursor: pointer;
-	padding-right: 1rem;
 	overflow: hidden;
-	height: 100%;
-}
+  margin-bottom: -1rem;
+  border-left: 0.5rem solid #F4F6F7;
+	border-top: 0.5rem solid #F4F6F7;
 
-.accordion-heading:after {
-	position: absolute;
-	top: 0;
-	right: 0;
-	display: block;
-	height: 100%;
-	padding: 2.7rem 0;
-	content: "\f0d7";
-	width: 8rem;
-	background: #f4f6f7;
-	text-align: center;
-	color: #222;
-	font-size: 2.8rem;
-	font-family: 'FontAwesome';
 }
 
 .active > .accordion-heading:after {
@@ -1290,10 +1301,14 @@ a.accordion-heading-talk {
 
 .accordion-title {
 	margin: 0;
-	padding: 2.5rem 2rem;
-	font-size: 1.8rem;
+	padding: 1.5rem 1rem;
+	font-size: 1.7rem;
 	line-height: 3rem;
 	color: #222;
+}
+
+.accordion-title h4 {
+  width: 100%;
 }
 
 .fa.accordion-trigger {
@@ -1311,7 +1326,7 @@ a.accordion-heading-talk {
 .accordion-body-tracks {
 	width:300%;
 	margin-left: -100%;
-	margin-top: 20px;
+	padding: 20px 20px 10px 10px;
 }
 
 .lean {
