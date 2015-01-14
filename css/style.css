@@ -661,14 +661,32 @@ Content
 /*--------------------
 Schedule
 --------------------*/
+ul.tracks li a.accordion-heading-talk {
+	background: none;
+	height: 80px;
+	text-align: top;
+}
+
+ul.tracks li a.accordion-heading-talk .accordion-title{
+	padding: 1rem 0.5rem;
+}
+
+ul.tracks li.schedule-talk {
+	margin-top: -2rem;
+}
+
 .schedule-time {
 	float: left;
 	padding: 2rem 1.5rem;
 	line-height: 3rem;
 	font-size: 3rem;
 	font-weight: 700;
-	text-align: center;
+	text-align: left;
 	color: #222;
+}
+
+.schedule-time-mobile {
+	display: none;
 }
 
 .schedule-time > sup {
@@ -690,8 +708,8 @@ Schedule
 }
 
 .schedule-speaker-list {
-	margin-top: 2rem;
-	padding-top: 3rem;
+	padding-top: 1rem;
+	margin: 1rem auto 2rem auto;
 	overflow: hidden;
 }
 
@@ -728,7 +746,6 @@ li.schedule-talk, li.schedule-talk.active .accordion-heading-talk {
 	display: inline-block;
 	margin: 0 auto;
 	vertical-align: top;
-	text-align: center;
 	box-sizing: border-box;
 }
 
@@ -742,6 +759,7 @@ a.accordion-heading-talk {
 	height: 119px;
 	width: 100%;
 	z-index: 10;
+	text-align: center;
 }
 
 li.active .accordion-body-tracks {
@@ -1241,7 +1259,7 @@ Tabs
 
 .tab-pane {
 	background: #f4f6f7;
-	padding: 3rem;
+	padding: 3rem 3rem 1rem 3rem;
 }
 
 
@@ -1255,7 +1273,7 @@ Accordion
 }
 
 .tab-pane .accordion {
-	margin: -3rem;
+	margin: -1.5rem -3rem -1rem -3rem;
 }
 
 .accordion > li {
@@ -1289,7 +1307,6 @@ a.accordion-heading-talk {
 	display: inline-block;
 	cursor: pointer;
 	overflow: hidden;
-  margin-bottom: -1rem;
   border-left: 0.5rem solid #F4F6F7;
 	border-top: 0.5rem solid #F4F6F7;
 
@@ -1301,7 +1318,7 @@ a.accordion-heading-talk {
 
 .accordion-title {
 	margin: 0;
-	padding: 1.5rem 1rem;
+	padding: 1rem 1rem 1.5rem 1rem;
 	font-size: 1.7rem;
 	line-height: 3rem;
 	color: #222;

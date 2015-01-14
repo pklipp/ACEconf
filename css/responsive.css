@@ -19,7 +19,7 @@
 
 	ul.accordion {font-size: 1.3rem;}
 	.schedule-time > sup { font-size: 1.5rem; }
-	.schedule-time { font-size: 2.5rem; padding: 1rem;}
+	.schedule-time { font-size: 2.4rem; padding: 1rem;}
 
 }
 
@@ -38,10 +38,63 @@
 	.schedule-speaker,
 	.schedule-speaker-list { display: none; }
 	.schedule-time { padding-bottom: 0; text-align: left;  }
-	ul.accordion {font-size: 1.6rem;}
-	.schedule-time > sup { font-size: 1.5rem; }
-	.schedule-time { font-size: 2.5rem; padding: 1rem;}
 
+	ul.accordion .schedule-talk a .accordion-title{font-size: 1.7rem; line-height: 1.9rem}
+	.schedule-time > sup { font-size: 1.3rem; }
+	.schedule-time { font-size: 2.1rem; padding: 0.4rem;}
+
+	.tab-pane .accordion.tracks {
+		padding-top: 0.8rem;
+		margin: -1.5rem -3rem -0.1rem -3rem;
+	}
+
+}
+
+@media (max-width: 560px) {
+
+	ul.accordion li.accordion-heading-time {
+		width: 100%;
+		padding: 0.6rem;
+	}
+
+	ul.accordion.tracks h4.accordion-title {
+		line-height:2rem;
+		text-align: center;
+	}
+
+	ul.tracks .schedule-talk .accordion-title{
+		font-size: 1.5rem;
+	}
+
+	li.schedule-talk {
+		width: 33%;
+	}
+
+	span.schedule-time.accent {
+		width: 100%;
+		text-align: center;
+	}
+
+	span.schedule-time-mobile {
+		display: block;
+	}
+
+	.schedule-time {
+		display: none;
+	}
+
+	ul.accordion.tracks a.accordion-heading-talk {
+		height: 90px;
+	}
+
+	ul.accordion.tracks li.accordion-heading-time{
+		display: none;
+	}
+
+	.tab-pane .accordion.tracks {
+		margin: -1.5rem -3rem -0.1rem -3rem;
+		padding-top: 0.4rem;
+	}
 }
 
 @media (max-width: 480px) {
@@ -58,8 +111,8 @@
 	.news-date { width: 100%; padding: 1rem 1.5rem; }
 	.news a { margin: 0; }
 
-	.schedule-time > sup { font-size: 1.1rem; }
-	.schedule-time { font-size: 2rem; padding: 0.3rem;}
+	.schedule-time > sup { font-size: 1rem; }
+	.schedule-time { font-size: 1.6rem; padding: 0.3rem;}
 	ul.accordion {font-size: 1.4rem;}
 	h4.accordion-title { padding: 0.3rem; }
 
@@ -78,7 +131,8 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	.header-background { height: 600px; }
-
+	.schedule-time > sup { font-size: 1.9rem; }
+	.schedule-time { font-size: 2.5rem; padding: 0.6rem;}
 }
 
 @media (min-width: 1200px) and (max-width: 1280px) {
