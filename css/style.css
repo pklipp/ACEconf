@@ -724,8 +724,6 @@ ul.tracks li.schedule-talk {
 	float: left;
 	padding: 0 2rem 0 0;
 	margin-right: 2rem;
-	background: #fff;
-	border-radius: 2.5rem;
 }
 
 .schedule-speaker-list .schedule-speaker > img {
@@ -836,7 +834,7 @@ h2.submit-header {
 	display: table;
 	table-layout: fixed;
 	position: absolute;
-	bottom: 50px;
+	bottom: 80px;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -1320,7 +1318,7 @@ a.accordion-heading-talk {
 	margin: 0;
 	padding: 1rem 1rem 1.5rem 1rem;
 	font-size: 1.7rem;
-	line-height: 3rem;
+	line-height: 2.7rem;
 	color: #222;
 }
 

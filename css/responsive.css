@@ -21,6 +21,8 @@
 	.schedule-time > sup { font-size: 1.5rem; }
 	.schedule-time { font-size: 2.4rem; padding: 1rem;}
 
+	.speaker-contacts { bottom: 70px; }
+	.speaker-info h3 { text-align: center; } 
 }
 
 @media (max-width: 767px) {
@@ -84,7 +86,7 @@
 	}
 
 	ul.accordion.tracks a.accordion-heading-talk {
-		height: 90px;
+		height: 100px;
 	}
 
 	ul.accordion.tracks li.accordion-heading-time{
@@ -113,8 +115,11 @@
 
 	.schedule-time > sup { font-size: 1rem; }
 	.schedule-time { font-size: 1.6rem; padding: 0.3rem;}
-	ul.accordion {font-size: 1.4rem;}
 	h4.accordion-title { padding: 0.3rem; }
+
+	ul.accordion a.accordion-heading-talk {	height: 140px; }
+	ul.accordion.tracks a.accordion-heading-talk {	height: 90px;	}
+	ul.accordion .schedule-talk a .accordion-title { font-size: 1.4rem; }
 
 }
 
