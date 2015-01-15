@@ -22,7 +22,7 @@
 	.schedule-time { font-size: 2.4rem; padding: 1rem;}
 
 	.speaker-contacts { bottom: 70px; }
-	.speaker-info h3 { text-align: center; } 
+	.speaker-info h3 { text-align: center; }
 }
 
 @media (max-width: 767px) {
@@ -50,6 +50,8 @@
 		margin: -1.5rem -3rem -0.1rem -3rem;
 	}
 
+	ul.accordion li.schedule-talk a.accordion-heading-talk { height: 140px; }
+	ul.accordion.tracks li.schedule-talk a.accordion-heading-talk {	height: 90px;	}
 }
 
 @media (max-width: 560px) {
@@ -85,9 +87,11 @@
 		display: none;
 	}
 
-	ul.accordion.tracks a.accordion-heading-talk {
+	ul.accordion.tracks li.schedule-talk  a.accordion-heading-talk {
 		height: 100px;
 	}
+
+	ul.accordion li.schedule-talk a.accordion-heading-talk { height: 150px; }
 
 	ul.accordion.tracks li.accordion-heading-time{
 		display: none;
@@ -132,12 +136,18 @@
 	.content footer { padding: 2rem 3.5rem; }
 	.section-header { margin: 1.5rem 0 3rem 0; }
 
+	ul.accordion li.schedule-talk a.accordion-heading-talk { height: 150px; }
+	ul.accordion.tracks li.schedule-talk a.accordion-heading-talk {	height: 90px;	}
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	.header-background { height: 600px; }
 	.schedule-time > sup { font-size: 1.9rem; }
 	.schedule-time { font-size: 2.5rem; padding: 0.6rem;}
+	ul.accordion .schedule-talk a .accordion-title { font-size: 1.4rem; }
+	ul.accordion li.schedule-talk a.accordion-heading-talk { height: 130px; }
+	ul.accordion.tracks li.schedule-talk a.accordion-heading-talk {	height: 90px;	}
 }
 
 @media (min-width: 1200px) and (max-width: 1280px) {
@@ -145,5 +155,5 @@
 }
 
 @media (min-width: 1300px) {
-
+	a.accordion-heading-talk { height: 130px; }
 }
