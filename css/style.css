@@ -263,7 +263,21 @@ Header
 .header {
 	position: relative;
 	margin-bottom: -40px;
+	margin-top: 20px;
 	overflow: hidden;
+}
+
+.new-ace {
+	width: 30%;
+	position: absolute;
+	top: 2%;
+	left: 35%;
+}
+
+.logo-ace {
+	width: 20%;
+	position: relative;
+	left: 0;
 }
 
 .header:before {
@@ -293,14 +307,18 @@ Header
 .header-caption .box h1 {
 	margin: 0 0 1rem 0;
 	font-weight: 700;
-	color: #fff;
+	color: black;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header-caption .box h2, .header-caption .box h3, .header-caption .box h4 {
+	color: black !important;
 }
 
 .header-caption .box span {
 	font-size: 4rem;
 	line-height: 1em;
-	color: #fff;
+	color: black;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
