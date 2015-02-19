@@ -15,7 +15,6 @@
             fn.Slider();
             fn.Menu();
             fn.Wow();
-            fn.BgVideo();
             fn.StickyMenu();
             fn.RegisterForm();
             fn.SubscribeForm();
@@ -78,7 +77,7 @@
         // Carousel
         Carousel: function () {
             var owl = $("#carousel");
-             
+
             owl.owlCarousel({
                 theme: "carousel",
                 navigation: true,
@@ -99,7 +98,7 @@
         // Slider
         Slider: function () {
             var owl = $("#slider");
-             
+
             owl.owlCarousel({
                 theme: "slider",
                 navigation : true,
@@ -142,29 +141,9 @@
 
 
 
-        // Background Video
-        BgVideo: function() {
-            if(!(navigator.userAgent.match(/iPhone|iPad|iPod|Android|BlackBerry|IEMobile/i))) {
-                var videobackground = new $.backgroundVideo($('#header-background'), {
-                    "align": "centerXY",
-                    "width": 1280,
-                    "height": 720,
-                    "path": "media/",
-                    "filename": "video",
-                    "types": ["mp4","ogv","webm"]
-                });
-            }
-
-            window.onload = function (){
-                $('#preloader').addClass('ready');
-            }
-        },
-
-
-
         // Sticky Menu
         StickyMenu: function () {
-            var nav = $('#navigation-wrap'), 
+            var nav = $('#navigation-wrap'),
                 navOffset;
 
             function reCalc () {
