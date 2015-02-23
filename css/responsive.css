@@ -17,6 +17,13 @@
 	}
 	.navbar-nav { border-bottom: 1px solid #ebeef0; }
 
+	.new-ace {
+		width: 18%;
+		position: absolute;
+		top: 9%;
+		left: 28%;
+	}
+
 	ul.accordion {font-size: 1.3rem;}
 	.schedule-time > sup { font-size: 1.5rem; }
 	.schedule-time { font-size: 2.4rem; padding: 1rem;}
