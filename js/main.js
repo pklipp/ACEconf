@@ -2,7 +2,7 @@
     "use strict";
 
     var venueAddress = "Monte Cassino 2, Krakow, Poland", // Venue Address
-        eventInfo = ["Krakow, Poland", "14-15 April 2016"]; // Event Info
+        eventInfo = ["Krakow, Poland", "11-12 May 2017"]; // Event Info
 
     var fn = {
 
