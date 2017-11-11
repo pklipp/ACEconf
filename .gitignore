@@ -1,4 +1,7 @@
-
-.DS_Store
-
-singlelineofagenda
+/vendor/*
+/config/app.php
+/tmp/*
+/logs/*
+/__ASSETS
+/.idea
+/webroot/files
